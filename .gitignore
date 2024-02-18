@@ -1,0 +1,49 @@
+# Ignorar la carpeta obj en la raíz del repositorio
+obj/
+
+# Ignorar la carpeta .vs en la raíz del repositorio
+.vs/
+
+# Ignorar archivos y carpetas generados por Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Ignorar archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignorar archivos de compilación de C#
+*.dll
+*.exe
+*.pdb
+*.log
+*.user
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+[Bb]in/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]inaries/
+[Ll]og/
+[Ll]ogs/
