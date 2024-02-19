@@ -1,6 +1,6 @@
 # CirsaTechHub
 
-Reto hackathon de Cirsa donde se crea una aplicación de stress testing de una API. 
+Reto TechHub de Cirsa donde se crea una aplicación de stress testing de una API. 
 
 El desafío consiste en desarrollar una aplicación backend en C# utilizando .NET Core. La aplicación debe incluir pruebas específicas para evaluar diferentes aspectos del sistema: 
   - Smoke Test, 
