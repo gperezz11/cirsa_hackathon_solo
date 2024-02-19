@@ -19,7 +19,7 @@ El proyecto de Stress Testing tiene como objetivo evaluar el rendimiento y la es
 ## Smoke Test:
 
 ### Resumen
-Este código representa una clase de prueba llamada "SmokeTests" que contiene varios métodos de prueba para probar la funcionalidad de una API. La clase utiliza el marco de prueba NUnit y la clase HttpClient para enviar solicitudes HTTP a los puntos finales de la API y afirmar las respuestas esperadas.
+Este código representa una clase de prueba llamada "SmokeTests" que contiene varios métodos de prueba para probar la funcionalidad de una API. La clase utiliza el marco de prueba NUnit y la clase HttpClient para enviar solicitudes HTTP a los endpoints de la API y afirmar las respuestas esperadas.
 
 ### Ejemplo de uso
 ```csharp
@@ -38,7 +38,7 @@ smokeTests.TearDown();
 #### Principales funcionalidades
 - La clase `SmokeTests` es responsable de probar la funcionalidad de una API.
 - Inicializa una instancia de la clase HttpClient con la URL base de la API y el número de veces que se llamará a la API.
-- Envía solicitudes HTTP a los puntos finales de la API y afirma las respuestas esperadas utilizando el marco NUnit.
+- Envía solicitudes HTTP a los endpoints de la API y afirma las respuestas esperadas utilizando el marco NUnit.
 - Comprueba la disponibilidad de la API enviando una solicitud GET al endpoint `/gamedata`.
 - Prueba el método `GetGameDataShouldReturnOkUnderMinimalLoadAsync`, que envía múltiples solicitudes GET al endpoint `/gamedata` en paralelo y afirma que las respuestas tienen un código de estado de 200 (OK) y contenido JSON válido.
 - Prueba el método `GetValidGameDataByIDShouldReturnOkUnderMinimalLoadAsync`, que envía múltiples solicitudes GET al endpoint `/gamedata/{id}` con ID válidos aleatorios en paralelo y afirma que las respuestas tienen un código de estado de 200 (OK) y contenido JSON válido.
@@ -65,7 +65,7 @@ ___
 
 ## Average Load Test:
 ### Resumen
-La clase "AverageLoadTest" es un dispositivo de prueba que contiene métodos de prueba para probar el rendimiento y el comportamiento de una API en condiciones de carga promedio. Utiliza la clase `HttpClient` para enviar solicitudes HTTP a los puntos finales de la API y afirma las respuestas esperadas.
+La clase "AverageLoadTest" es un dispositivo de prueba que contiene métodos de prueba para probar el rendimiento y el comportamiento de una API en condiciones de carga promedio. Utiliza la clase `HttpClient` para enviar solicitudes HTTP a los endpoints de la API y afirma las respuestas esperadas.
 
 ### Ejemplo de uso
 ```csharp
@@ -123,7 +123,7 @@ ___
 ## SpikeTest:
 
 ### Resumen
-La clase `SpikeTest` es un dispositivo de prueba que contiene varios métodos de prueba para probar el comportamiento de una API. Utiliza la clase `HttpClient` para enviar solicitudes HTTP a los puntos finales de la API y afirma las respuestas esperadas.
+La clase `SpikeTest` es un dispositivo de prueba que contiene varios métodos de prueba para probar el comportamiento de una API. Utiliza la clase `HttpClient` para enviar solicitudes HTTP a los endpoints de la API y afirma las respuestas esperadas.
 
 ### Ejemplo de uso
 ```csharp
@@ -143,7 +143,7 @@ spikeTest.PostValidGameData_ShouldReturnCreatedUnderPikeLoadAsync();
 Las principales funcionalidades de la clase `SpikeTest` son:
 - Inicializando el `HttpClient` con la URL base de la API en el método `Setup`.
 - Verificar la disponibilidad de la API enviando una solicitud GET al endpoint `/gamedata` en el método `CheckApiAvailability`.
-- Enviar múltiples solicitudes paralelas a diferentes puntos finales de API y afirmar las respuestas esperadas en los métodos de prueba.
+- Enviar múltiples solicitudes paralelas a diferentes endpoints de API y afirmar las respuestas esperadas en los métodos de prueba.
 ___
 #### Métodos
 - `Setup`: Inicializa el `HttpClient` con la URL base de la API.
